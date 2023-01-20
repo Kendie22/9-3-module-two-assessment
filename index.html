@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <link rel="icon" type="image/png" href="./assets/favicon.jpeg"/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,36 +17,38 @@
         <h1>Ghibli Review App</h1>
         <img src="./images/ghibli-logo.png" alt="Ghibli logo" />
 
-
-        <!-- <img src="images/ghibli-logo.png" alt="Ghibli Review Logo"> -->
-
     </header>
-    <!-- <ul id="all-characters">
-    </ul > -->
-    <main>
+  <main>
         <section>
             <h2>Select a movie</h2>
-            <form>
-                <select title="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option> 
-            </form>
+            <select title="" id="movie-menu">
+                <option value=""></option> 
             </select>
         </section>
         <section>
-            <h2>Add a Review</h2>
-            <form>
+            <h2>Add a review</h2>
+            <form action="">
                 <label for="review">Your review:</label>
                 <input id="review" type="text"> 
-                <input type="submit" >
+                <input type="submit" value="Submit">
+                </form>
         </section>
         <section>
-            <h2>Movie details</h2>
+            <div id="display-info">
+                <h2>Movie details</h2>
+            </div>
         </section>
-        <section></section>
-        <section></section>
+        <section>
+            <h2>People</h2>
+            <ol></ol>
+            <!-- <li></li> -->
+            <button id="show-people">Show People</button>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <ul></ul>
+            <button id="reset-reviews">Reset Reviews</button>
+        </section>
 
     </main>
 </body>

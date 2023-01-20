@@ -1,14 +1,23 @@
-header{
+
+  header{
     width:75%;
     background-color: skyblue;
     font-family: monospace;
     text-align: right;
 }
 header img {
-    width:75%;
-
+  width:75%;
 }
 
 body {
     background-color: lavender;
+    font-family: monospace;
+    display:block;
+
 }
+@media screen and (max-width: 500px) {
+  section#reviews {
+    display: none;
+  }
+}
+
